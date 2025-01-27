@@ -1,6 +1,6 @@
 import { useState } from "react";
 import testScores from "../../json-content/Accomplishments/test-scores.json";
-import TestScoreDialog from "./TestScoreDialog";
+import TestScoreDialog from "../CommonDialogs/TestScoreDialog";
 
 const TestScores = () => {
   const [scores, setScores] = useState(testScores);

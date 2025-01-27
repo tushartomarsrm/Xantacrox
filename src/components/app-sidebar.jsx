@@ -29,18 +29,18 @@ import {
 // This is sample data.
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    name: "Welcome !",
+    email: "xanthacrox@gmail.com",
+    avatar: "/AppIcons/CoderImageAppIcon.gif",
   },
   teams: [
     {
-      name: "Acme Inc",
+      name: "Tushar Coders",
       logo: GalleryVerticalEnd,
       plan: "Enterprise",
     },
     {
-      name: "Acme Corp.",
+      name: "Mukul Coders",
       logo: AudioWaveform,
       plan: "Startup",
     },
@@ -52,41 +52,63 @@ const data = {
   ],
   navMain: [
     {
-      title: "Playground",
-      url: "#",
+      title: "Home",
+      url: "/",
       icon: SquareTerminal,
-      isActive: true,
-      items: [
-        {
-          title: "History",
-          url: "#",
-        },
-        {
-          title: "Starred",
-          url: "#",
-        },
-        {
-          title: "Settings",
-          url: "#",
-        },
-      ],
+      items:null
     },
     {
-      title: "Models",
-      url: "#",
+      title: "Jobs",
+      url: "/",
+      icon: SquareTerminal,
+      items:null
+    },
+    
+    {
+      title: "Profile",
+      url: "/profile",
       icon: Bot,
+      // isActive:true,
       items: [
         {
-          title: "Genesis",
-          url: "#",
+          title: "About",
+          url: "",
         },
         {
-          title: "Explorer",
-          url: "#",
+          title: "Education",
+          url: "education",
         },
         {
-          title: "Quantum",
-          url: "#",
+          title: "Work Experience",
+          url: "experience",
+        },
+        {
+          title: "Skills & Proficiency",
+          url: "skillsec",
+        },
+        {
+          title: "Resposibilities",
+          url: "responsibility",
+        },
+        {
+          title: "Projects",
+          url: "projects",
+        },
+        {
+          title: "Accomplishments",
+          url: "accomplishments",
+        },
+        {
+          title: "Volunteering",
+          url: "volunteering",
+        },
+        {
+          title: "Extra-curricular Details",
+          url: "curricular",
+        },
+        {
+          title: "Resume Section",
+          url: "resume",
         },
       ],
     },

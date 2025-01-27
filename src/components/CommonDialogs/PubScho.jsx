@@ -15,7 +15,7 @@ const CommonDialog = ({ item, onSave, onCancel, type }) => {
 
   // Initialize Quill editor
   useEffect(() => {
-    if (!quillRef.current) {
+    if (editorRef.current && !quillRef.current) {
       quillRef.current = new Quill(editorRef.current, {
         theme: "snow",
         placeholder: "Enter description...",
@@ -27,7 +27,7 @@ const CommonDialog = ({ item, onSave, onCancel, type }) => {
           ],
         },
       });
-
+  
       quillRef.current.on("text-change", () => {
         setFormState((prev) => ({
           ...prev,
@@ -35,11 +35,12 @@ const CommonDialog = ({ item, onSave, onCancel, type }) => {
         }));
       });
     }
-
+  
     if (quillRef.current && quillRef.current.root.innerHTML !== formState.description) {
-      quillRef.current.root.innerHTML = formState.description;
+      quillRef.current.root.innerHTML = formState.description || "";
     }
   }, [formState.description]);
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -49,7 +50,7 @@ const CommonDialog = ({ item, onSave, onCancel, type }) => {
   const handleSave = () => onSave(formState);
 
   const renderInputField = (key, value) => {
-    if (key === "dateAwarded" || key === "publicationdate") {
+    if (key === "dateAwarded" || key === "publicationdate" || key==="event_date" || key==="issueDate") {
       return (
         <div key={key} className="mt-4">
           <label className="text-sm font-semibold">{key.charAt(0).toUpperCase() + key.slice(1)}:</label>
@@ -62,6 +63,20 @@ const CommonDialog = ({ item, onSave, onCancel, type }) => {
           />
         </div>
       );
+    }else if(key==="proofurl" || key=== "publicationurl" || key==="google_drive_link" || key==="proofUrl"){
+      return (
+        <div key={key} className="mt-4">
+          <label className="text-sm font-semibold">{key.charAt(0).toUpperCase() + key.slice(1)}:</label>
+          <input
+            type="url"
+            placeholder="Enter Url"
+            name={key}
+            value={value || ""}
+            onChange={handleChange}
+            className="w-full p-2 border rounded"
+          />
+        </div>
+      )
     }
 
     // Default text input for other fields
@@ -108,7 +123,7 @@ const CommonDialog = ({ item, onSave, onCancel, type }) => {
             return (
               <div key={key}>
                 <label className="text-sm font-semibold">Description:</label>
-                <div ref={editorRef} />
+                <div ref={editorRef}  />
               </div>
             );
           }

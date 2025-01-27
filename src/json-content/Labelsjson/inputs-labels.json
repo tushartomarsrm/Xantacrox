@@ -1,0 +1,49 @@
+{
+    "Patents":
+    {
+        "l1":"Patent Title",
+        "l2":"Patent Office",
+        "l3":"Application Status",
+        "l4":"Patent Status",
+        "l5":"Filing Date",
+        "l6":"Issue Date",
+        "l7":"Patent Url"
+    },
+    "Experiences":{
+        "l1":"Company Sector",
+        "l2":"Job Title",
+        "l3":"Job Title",
+        "l4":"Job Location",
+        "l5":"Start Date",
+        "l6":"End Date",
+        "l7":"Project Url"
+    },
+    "Competitions":{
+        "l1":"Name",
+        "l2":"Location",
+        "l3":"Organizer",
+        "l4":"GroupOrIndividual",
+        "l5":"Start Date",
+        "l6":"End Date",
+        "l7":"Url"
+    },
+    "Certifications":{
+        "l1":"Name",
+        "l2":"Authority",
+        "l3":"Mode Of Exam",
+        "l4":"Score",
+        "l5":"Date Of Issue",
+        "l6":"Expiry Date",
+        "l7":"Url"
+    },
+    "Projects":{
+        "l1":"Title",
+        "l2":"Domain",
+        "l3":"Individual Or Group",
+        "l4":"Associated With",
+        "l5":"Start Date",
+        "l6":"End Date",
+        "l7":"Working Url",
+        "l8":"GitHub Url"
+    }
+   }

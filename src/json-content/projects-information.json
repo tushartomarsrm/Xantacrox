@@ -1,27 +1,35 @@
 [
-    {
-      "title": "Portfolio Website",
-      "domain": "Web Development",
-      "startDate": "2023-01-01",
-      "endDate": "2023-06-01",
-      "currentlyWorkingOnIt": false,
-      "githubUrl": "https://github.com/username/portfolio-website",
-      "workingUrl": "https://www.myportfolio.com",
-      "associatedWith": "Personal Project",
-      "description": "<p>Designed and developed a personal portfolio website using React and Tailwind CSS. Implemented responsive design and optimized for performance.</p>",
-      "isEditable": false
-    },
-    {
-      "title": "E-commerce Platform",
-      "domain": "Software Development",
-      "startDate": "2022-08-01",
-      "endDate": "",
-      "currentlyWorkingOnIt": true,
-      "githubUrl": "https://github.com/username/ecommerce-platform",
-      "workingUrl": "https://www.ecommerce.com",
-      "associatedWith": "Freelance",
-      "description": "<p>Developed a full-stack e-commerce platform with features such as user authentication, product listings, and payment integration using Node.js and React.</p>",
-      "isEditable": false
-    }
-  ]
-  
+  {
+    "title": "AI Image Classifier",
+    "domain": "Artificial Intelligence",
+    "individualOrGroup": "Individual",
+    "associatedWith": "Freelance",
+    "githubUrl": "https://github.com/username/ai-image-classifier",
+    "workingUrl": "https://username.github.io/ai-image-classifier",
+    "startDate": "2023-01-15",
+    "issueDate": "2023-04-10",
+    "description": "An AI-based image classification system using machine learning algorithms to classify images into various categories."
+  },
+  {
+    "title": "Task Manager App",
+    "domain": "Mobile Application",
+    "individualOrGroup": "Group",
+    "associatedWith": "Tech Solutions Inc.",
+    "githubUrl": "https://github.com/username/task-manager-app",
+    "workingUrl": "https://play.google.com/store/apps/details?id=com.tasksmanager",
+    "startDate": "2022-07-05",
+    "issueDate": "2022-10-20",
+    "description": "A mobile app to help users manage tasks and to-do lists with features like notifications and due dates."
+  },
+  {
+    "title": "E-commerce Website",
+    "domain": "Web Development",
+    "individualOrGroup": "Group",
+    "associatedWith": "Startup Co.",
+    "githubUrl": "https://github.com/username/e-commerce-website",
+    "workingUrl": "https://www.shopnow.com",
+    "startDate": "2021-05-10",
+    "issueDate": "2021-08-15",
+    "description": "An e-commerce website for buying and selling products online with a smooth user interface and integrated payment systems."
+  }
+]

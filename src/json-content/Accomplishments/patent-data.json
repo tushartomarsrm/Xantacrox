@@ -1,20 +1,24 @@
 [
   {
-    "patenttitle": "Method for Managing Cloud Resources",
-    "patentoffice": "United States Patent and Trademark Office",
-    "applicationstatus": "Pending",
-    "patentstatus": "Filed",
-    "filingdate": "2024-03-10",
-    "issuedate": "N/A",
+    "patentTitle": "Method for Managing Cloud Resources",
+    "patentOffice": "United States Patent and Trademark Office",
+    "applicationStatus": "Pending",
+    "patentStatus": "Filed",
+    "filingDate": "2024-03-10",
+    "issueDate": "2024-03-01",
+    "patentNumber": "US123456678",
+    "patentUrl": "https://www.uspto.gov/patents/patent-search",
     "description": "A system and method for dynamically managing cloud resources based on user needs and machine learning algorithms."
   },
   {
-    "patenttitle": "Blockchain-based Payment System",
-    "patentoffice": "European Patent Office",
-    "applicationstatus": "Approved",
-    "patentstatus": "Granted",
-    "filingdate": "2022-11-05",
-    "issuedate": "2023-07-15",
+    "patentTitle": "Blockchain-based Payment System",
+    "patentOffice": "European Patent Office",
+    "applicationStatus": "Approved",
+    "patentStatus": "Granted",
+    "filingDate": "2022-11-05",
+    "issueDate": "2023-07-15",
+    "patentNumber": "US999999999",
+    "patentUrl": "https://www.google.com",
     "description": "A decentralized payment system utilizing blockchain technology to process secure financial transactions."
   }
 ]

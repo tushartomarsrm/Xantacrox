@@ -16,20 +16,13 @@ import {
 import Navbar from "./Navbar"
 import Student_Details from "./Student_Details"
 import Education_Details from "./Education_Details"
-import ProfessionalExperience from "./Professional-experience"
+// import ProfessionalExperience from "./Professional-experience"
 import SkillsAndProficiency from "./SkillsAndProficiency"
 import PositionOfResponsibilities from "./PositionOfResponsibilities"
-import ProjectsInput from "./Projects-input"
-import AwardRecognition from "./AccomplishMents/AwardRecognition"
-import AddCertification from "./AccomplishMents/AddCertification"
 import { useState } from "react"
-import AddCompetition from "./AccomplishMents/AddCompetition"
-import AddConference from "./AccomplishMents/AddConference"
 import MainFramer from "./FramesMotion/MainFramer"
 import TestScores from "./AccomplishMents/TestScores"
-import PatentData from "./AccomplishMents/PatentData"
-import AddPublication from "./AccomplishMents/AddPublication"
-import AddScholarship from "./AccomplishMents/AddScholarship"
+import {Projects,Publications, Scholarships ,Conferences,Patents,ProfessionalExp,Competitions,Certifications,AwardRecognition} from "./AccomplishMents/AddPuSc"
 
 export default function Page() {
   const [blury,setB]=useState(true);
@@ -71,20 +64,26 @@ export default function Page() {
         // </div>
         <MainFramer/> 
         :<>
-        <AddPublication/>
-        <AddScholarship/>
-        <PatentData/>
-        <TestScores/>
-        <AddConference/>
-        <AddCompetition/>
-        <AddCertification/>
-        <AwardRecognition/><ProjectsInput/>
-        <PositionOfResponsibilities/>
         <Student_Details/>
-        
         <Education_Details/>
-        <ProfessionalExperience/>
-        <SkillsAndProficiency/></>
+        <SkillsAndProficiency/>
+        <PositionOfResponsibilities/>
+        
+        <Conferences/>
+        <Scholarships/>
+        <TestScores/>
+        <Patents/>
+        <Publications/>
+        <ProfessionalExp/>
+        <Competitions/>
+        <Certifications/>
+        <AwardRecognition/>
+        <Projects/>
+        
+        
+        
+        
+        </>
         
 }
         
