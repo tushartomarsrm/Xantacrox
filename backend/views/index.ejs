@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced File Storage System</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="mb-4 text-primary">Advanced File Storage System</h1>
+
+        <% folders.forEach(folder => { %>
+            <div class="mb-5">
+                <h3 class="text-success"><%= folder %></h3>
+                <hr>
+                <div class="row g-3">
+                    <% if (files[folder] && files[folder].length > 0) { %>
+                        <% files[folder].forEach(file => { %>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card shadow-sm">
+                                    <div class="card-body d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <span class="me-2">
+                                                <% const ext = file.split('.').pop(); %>
+                                                <% if (ext === 'pdf') { %>
+                                                    <i class="fa fa-file-pdf text-danger"></i>
+                                                <% } else if (['doc', 'docx'].includes(ext)) { %>
+                                                    <i class="fa fa-file-word text-primary"></i>
+                                                <% } else if (['jpg', 'png'].includes(ext)) { %>
+                                                    <i class="fa fa-file-image text-info"></i>
+                                                <% } else { %>
+                                                    <i class="fa fa-file text-muted"></i>
+                                                <% } %>
+                                            </span>
+                                            <div>
+                                                <p class="mb-0 fw-bold"><%= file %></p>
+                                                <small class="text-muted">
+                                                    Uploaded: <%= new Date(parseInt(file.split('-')[0])).toLocaleDateString() %>
+                                                </small>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-link text-danger p-0 me-2"
+                                                onclick="deleteFile('<%= folder %>', '<%= file %>')">
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                            <a href="/uploads/<%= folder %>/<%= file %>" class="btn btn-link text-success p-0" download>
+                                                <i class="fa fa-download"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <% }); %>
+                    <% } else { %>
+                        <p class="text-muted">Currently no file is associated with this section. Click below to upload a new file.</p>
+                    <% } %>
+                </div>
+                <button class="btn btn-primary mt-3" onclick="showUploadForm('<%= folder %>')">Upload a new file</button>
+            </div>
+        <% }) %>
+    </div>
+
+    <script>
+        function deleteFile(folder, fileName) {
+            fetch(`/delete/${folder}/${fileName}`, {
+                method: 'DELETE',
+            })
+                .then(response => response.text())
+                .then(message => {
+                    alert(message);
+                    location.reload(); // Reload the page to update the UI
+                })
+                .catch(error => console.error(error));
+        }
+
+        function showUploadForm(folder) {
+    const uploadForm = document.createElement('form');
+    uploadForm.action = '/upload';
+    uploadForm.method = 'POST';
+    uploadForm.enctype = 'multipart/form-data';
+    uploadForm.innerHTML = `
+        <input type="hidden" name="folder" value="${folder}">
+        <div class="mb-3">
+            <label for="customName" class="form-label">Enter File Name</label>
+            <input type="text" id="customName" name="customName" class="form-control" placeholder="Enter a name for the file" required>
+        </div>
+        <div class="mb-3">
+            <label for="file" class="form-label">Select File</label>
+            <input type="file" name="file" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-success">Upload</button>
+    `;
+
+    const modalDiv = document.createElement('div');
+    modalDiv.className = 'modal fade';
+    modalDiv.tabIndex = '-1';
+    modalDiv.innerHTML = `
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Upload File to ${folder}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    ${uploadForm.outerHTML}
+                </div>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(modalDiv);
+    const modal = new bootstrap.Modal(modalDiv);
+    modal.show();
+
+    modalDiv.addEventListener('hidden.bs.modal', () => {
+        modalDiv.remove();
+    });
+}
+    </script>
+</body>
+</html>

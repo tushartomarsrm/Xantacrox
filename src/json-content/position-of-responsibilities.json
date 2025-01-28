@@ -1,29 +1,35 @@
 [
   {
-    "position": "Team Lead",
-    "organization": "Tech Solutions Inc.",
-    "startDate": "2021-05-01",
-    "endDate": "2023-04-30",
-    "currentlyWorking": false,
-    "description": "<b>Lead</b> a team of 10 engineers to develop innovative software solutions.",
-    "isEditable": false
+    "title": "President of Tech Club",
+    "organization": "University Tech Club",
+    "responsibilities": "Planning events, managing budgets, mentoring members",
+    "achievements": "Increased club membership by 40%, organized 5 major events",
+    "location": "University Campus",
+    "driveUrl": "https://drive.google.com/file/d/abc123456",
+    "startDate": "2022-08-01",
+    "issueDate": "2023-08-01",
+    "description": "Led the university's tech club, organized workshops, hackathons, and technical events, and managed a team of 20 members."
   },
   {
-    "position": "Project Manager",
-    "organization": "InnoTech",
-    "startDate": "2023-05-01",
-    "endDate": null,
-    "currentlyWorking": true,
-    "description": "<i>Managing</i> multiple projects and ensuring timely delivery.",
-    "isEditable": false
+    "title": "Community Manager",
+    "organization": "Open Source Contributors Network",
+    "responsibilities": "Community engagement, organizing webinars, onboarding contributors",
+    "achievements": "Increased contributor retention by 25%, hosted 12 successful webinars",
+    "location": "Remote",
+    "driveUrl": "https://drive.google.com/file/d/def789101",
+    "startDate": "2021-05-15",
+    "issueDate": "2022-05-15",
+    "description": "Managed a global community of open-source contributors, organized monthly webinars, and provided mentorship to new members."
   },
   {
-    "position": "Software Engineer",
-    "organization": "CodeFactory",
-    "startDate": "2018-01-01",
-    "endDate": "2021-04-30",
-    "currentlyWorking": false,
-    "description": "Developed <u>scalable</u> backend systems and improved application performance.",
-    "isEditable": false
+    "title": "Event Coordinator",
+    "organization": "National Science Fair",
+    "responsibilities": "Event planning, logistics, liaising with participants",
+    "achievements": "Successfully coordinated a fair with 500+ participants, received an appreciation award",
+    "location": "City Convention Center",
+    "driveUrl": "https://drive.google.com/file/d/ghi112233",
+    "startDate": "2023-02-01",
+    "issueDate": "2023-03-01",
+    "description": "Coordinated the national science fair involving over 50 schools, managed event logistics, and ensured smooth execution."
   }
 ]

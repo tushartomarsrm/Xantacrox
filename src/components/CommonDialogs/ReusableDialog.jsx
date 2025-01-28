@@ -11,7 +11,9 @@ const ReusableDialog = ({ item, onSave, onCancel, type, config }) => {
     "Experience":{"lastDateLabel":"EndDate","checkboxLabel":"Currently Working Here"},
     "Competition":{"lastDateLabel":"EndDate","checkboxLabel":"OnGoing"},
     "Certification":{"lastDateLabel":"ExpiryDate","checkboxLabel":"DoNotHaveExpiry"},
-    "Project":{"lastDateLabel":"EndDate","checkboxLabel":"WorkingOnIt"}
+    "Project":{"lastDateLabel":"EndDate","checkboxLabel":"WorkingOnIt"},
+    "Responsibilitie":{"lastDateLabel":"EndDate","checkboxLabel":"CurrentlyEngagedInIt"},
+    "Volunteering":{"lastDateLabel":"EndDate","checkboxLabel":"CurrentlyEngagedInIt"}
   }
   const [isDateNotIssued, setIsDateNotIssued] = useState(
     (item?.issueDate || config.defaultState?.issueDate) === "N/A"

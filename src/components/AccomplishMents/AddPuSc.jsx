@@ -18,8 +18,43 @@ import PatentDetailsDisplay from "./PatentDetailsDisplay";
 import professionalExperiences from "../../json-content/professional-experience";
 import projectsDetail from "../../json-content/projects-information";
 import certificationData from "../../json-content/Accomplishments/certification-data.json"
-
-   
+import responsibilitiesData from  "../../json-content/position-of-responsibilities";
+import extraCurricularData from  "../../json-content/extra-curricular-acc";
+import volunteeringData from "../../json-content/volunteering-data";
+const Responsibilities = () =>{
+    return (
+        <PatentDetailsDisplay
+        f1={responsibilitiesData}
+        f2="title"
+        f3="organization"
+        f4="responsibilities"
+        f5="achievements"
+        f6="startDate"
+        f7="issueDate"
+        f8="location"
+        f9="driveUrl"
+        f10="description"
+        f11="Responsibilities"
+        />
+    )
+} 
+const Volunteerings = () =>{
+    return (
+        <PatentDetailsDisplay
+        f1={volunteeringData}
+        f2="organizationName"
+        f3="role"
+        f4="cause"
+        f5="location"
+        f6="startDate"
+        f7="issueDate"
+        f8="hoursPerWeek"
+        f9="url"
+        f10="description"
+        f11="Volunteerings"
+        /> 
+    )
+} 
 const Projects = () =>{
     return (
         <PatentDetailsDisplay
@@ -162,7 +197,20 @@ const AwardRecognition = ()=>{
         />
     )
 }
-export {Publications,Scholarships,Conferences,Patents,ProfessionalExp,Competitions,Certifications,AwardRecognition,Projects};
+const ExtraCurriculars = ()=>{
+    return (
+        <PubSchoDetailsDisplay 
+        f1={extraCurricularData}
+        f2="category"
+        f3="proficiency"
+        f4="url"
+        f5="level"
+        f6="description"
+        f7="Extra-CurricularSkills"
+        />
+    )
+}
+export {ExtraCurriculars,Volunteerings,Publications,Responsibilities,Scholarships,Conferences,Patents,ProfessionalExp,Competitions,Certifications,AwardRecognition,Projects};
 
 
 

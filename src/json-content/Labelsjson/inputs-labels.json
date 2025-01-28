@@ -45,5 +45,25 @@
         "l6":"End Date",
         "l7":"Working Url",
         "l8":"GitHub Url"
+    },
+    "Responsibilities":{
+        "l1":"Title",
+        "l2":"Organization",
+        "l3":"Responsibilities",
+        "l4":"Achievements",
+        "l5":"Start Date",
+        "l6":"End Date",
+        "l7":"Drive Url",
+        "l8":"Location"
+    },
+    "Volunteerings":{
+        "l1":"Organization Name",
+        "l2":"Role",
+        "l3":"Cause",
+        "l4":"Location",
+        "l5":"Start Date",
+        "l6":"End Date",
+        "l7":"Url",
+        "l8":"Hours Per Week"
     }
    }

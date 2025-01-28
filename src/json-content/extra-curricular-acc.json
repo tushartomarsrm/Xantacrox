@@ -1,0 +1,23 @@
+[
+    {
+      "category": "Volleyball",
+      "proficiency": "Intermediate",
+      "url": "https://www.volleyballacademy.com",
+      "level": "Club Player",
+      "description": "Participated in local volleyball tournaments and trained weekly with a community team."
+    },
+    {
+      "category": "Basketball",
+      "proficiency": "Advanced",
+      "url": "https://www.basketballskills.org",
+      "level": "Regional Competitor",
+      "description": "Played in regional basketball leagues and conducted training sessions for beginners."
+    },
+    {
+      "category": "Tennis",
+      "proficiency": "Beginner",
+      "url": "https://www.tennistraining.com",
+      "level": "Learner",
+      "description": "Started learning tennis basics through a certified coaching program."
+    }
+  ]

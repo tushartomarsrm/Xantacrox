@@ -50,7 +50,7 @@ const CommonDialog = ({ item, onSave, onCancel, type }) => {
   const handleSave = () => onSave(formState);
 
   const renderInputField = (key, value) => {
-    if (key === "dateAwarded" || key === "publicationdate" || key==="event_date" || key==="issueDate") {
+    if (key === "dateAwarded" || key === "publicationdate" || key==="event_date" || key==="issueDate" || key==="startDate" || key==="endDate") {
       return (
         <div key={key} className="mt-4">
           <label className="text-sm font-semibold">{key.charAt(0).toUpperCase() + key.slice(1)}:</label>
@@ -63,7 +63,7 @@ const CommonDialog = ({ item, onSave, onCancel, type }) => {
           />
         </div>
       );
-    }else if(key==="proofurl" || key=== "publicationurl" || key==="google_drive_link" || key==="proofUrl"){
+    }else if(key==="proofurl" || key=== "publicationurl" || key==="google_drive_link" || key==="proofUrl" ||key==="driveUrl" || key==="url"){
       return (
         <div key={key} className="mt-4">
           <label className="text-sm font-semibold">{key.charAt(0).toUpperCase() + key.slice(1)}:</label>

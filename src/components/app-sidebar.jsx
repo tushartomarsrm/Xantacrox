@@ -68,7 +68,7 @@ const data = {
       title: "Profile",
       url: "/profile",
       icon: Bot,
-      // isActive:true,
+      isActive:true,
       items: [
         {
           title: "About",
@@ -80,7 +80,7 @@ const data = {
         },
         {
           title: "Work Experience",
-          url: "experience",
+          url: "experiences",
         },
         {
           title: "Skills & Proficiency",
@@ -88,7 +88,7 @@ const data = {
         },
         {
           title: "Resposibilities",
-          url: "responsibility",
+          url: "responsibilities",
         },
         {
           title: "Projects",

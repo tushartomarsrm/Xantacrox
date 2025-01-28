@@ -54,7 +54,7 @@ const PubSchoDetailsDisplay = ({f1,f2,f3,f4,f5,f6,f7}) =>{
               <div>
                 <h3 className="font-semibold">{item[f2]}</h3>
                 <p className="text-sm">{item[f3]}</p>
-                <p className="text-sm">{f7.slice(0,-1)} Date: {item[f5]}</p>
+                {f7==="Extra-CurricularSkills"?<p className="text-sm">{item[f5]}</p>:<p className="text-sm">{f7.slice(0,-1)} Date: {item[f5]}</p>}
                 <a className="text-sm text-blue-600" href={item[f4]}>{item[f4]}</a>
                 <div
                   className="text-sm mt-2"
