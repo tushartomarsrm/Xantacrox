@@ -1,69 +1,483 @@
 {
-    "Patents":
-    {
-        "l1":"Patent Title",
-        "l2":"Patent Office",
-        "l3":"Application Status",
-        "l4":"Patent Status",
-        "l5":"Filing Date",
-        "l6":"Issue Date",
-        "l7":"Patent Url"
+    "about": [
+        {
+            "label": "REG No.",
+            "keY": "Reg_no",
+            "iType": "text",
+            "placeholder": "Ex. RA2111026040039"
+        },
+        {
+            "label": "Full Name",
+            "keY": "Full_Name",
+            "iType": "text",
+            "placeholder": "Ex. Ram Vilas Paswan"
+        },
+        {
+            "label": "First Name",
+            "keY": "First_Name",
+            "iType": "text",
+            "placeholder": "Ex. Ram"
+        },
+        {
+            "label": "Middle Name",
+            "keY": "Middle_Name",
+            "iType": "text",
+            "placeholder": "Ex. Vilas"
+        },
+        {
+            "label": "Last Name",
+            "keY": "Last_Name",
+            "iType": "text",
+            "placeholder": "Ex. Paswan"
+        },
+        {
+            "label": "Date of Birth",
+            "keY": "DateOfBirth",
+            "iType": "date",
+            "placeholder": "2001-10-10"
+        },
+        {
+            "label": "Gender",
+            "keY": "Gender",
+            "iType": "select",
+            "options": [
+                "Male",
+                "Female",
+                "Other"
+            ]
+        },
+        {
+            "label": "Career Path",
+            "keY": "Career_Path",
+            "iType": "select",
+            "options": [
+                "Interested",
+                "Not Interested"
+            ]
+        },
+        {
+            "label": "Placement Cycle ID",
+            "keY": "Placement_cycle_id",
+            "iType": "number",
+            "placeholder": "Ex. 12345"
+        },
+        {
+            "label": "RFID",
+            "keY": "RFID",
+            "iType": "text",
+            "placeholder": "Ex. RF123456"
+        },
+        {
+            "label": "Registered On",
+            "keY": "RegisteredOn",
+            "iType": "date",
+            "placeholder": "2021-10-10"
+        },
+        {
+            "label": "Verified On",
+            "keY": "VerifiedOn",
+            "iType": "date",
+            "placeholder": "2021-10-10"
+        },
+        {
+            "label": "Is Eligible",
+            "keY": "isEligible",
+            "iType": "checkbox"
+        },
+        {
+            "label": "Verified By",
+            "keY": "verified_by",
+            "iType": "text",
+            "placeholder": "Ex. Campus commune"
+        }
+    ],
+    "educationGap": [
+        {
+            "label": "Gap from 10th to 12th",
+            "keY": "TenthtoTwelve",
+            "iType": "number",
+            "placeholder": "Ex. 2"
+        },
+        {
+            "label": "Reason for Gap (10th to 12th)",
+            "keY": "Reason1",
+            "iType": "text",
+            "placeholder": "Ex. Health Issues"
+        },
+        {
+            "label": "Gap from 12th to UG",
+            "keY": "TwelveToUGGap",
+            "iType": "number",
+            "placeholder": "Ex. 1"
+        },
+        {
+            "label": "Reason for Gap (12th to UG)",
+            "keY": "Reason2",
+            "iType": "text",
+            "placeholder": "Ex. Personal Development"
+        },
+        {
+            "label": "Gap from UG to PG",
+            "keY": "UGToPGGap",
+            "iType": "number",
+            "placeholder": "Ex. 0"
+        },
+        {
+            "label": "Reason for Gap (UG to PG)",
+            "keY": "Reason3",
+            "iType": "text",
+            "placeholder": "Ex. N/A"
+        }
+    ],
+    "contactInfo": [
+        {
+            "label": "Official Email",
+            "keY": "officialEmail",
+            "iType": "text",
+            "placeholder": "Ex. john.doe@university.com"
+        },
+        {
+            "label": "Personal Email",
+            "keY": "personelEmail",
+            "iType": "text",
+            "placeholder": "Ex. johndoe@example.com"
+        },
+        {
+            "label": "Alternate Email",
+            "keY": "alternateEmail",
+            "iType": "text",
+            "placeholder": "Ex. johndoe.alt@example.com"
+        },
+        {
+            "label": "Country Code",
+            "keY": "countryCode",
+            "iType": "select",
+            "options": [
+                "+1",
+                "+44",
+                "+91",
+                "+61",
+                "+81",
+                "+49",
+                "+33",
+                "+86",
+                "+55",
+                "+7"
+            ]
+        },
+        {
+            "label": "Contact Number",
+            "keY": "contactNumber",
+            "iType": "text",
+            "placeholder": "Ex. 123-456-7890"
+        },
+        {
+            "label": "Alternate Mobile",
+            "keY": "alternateMobile",
+            "iType": "text",
+            "placeholder": "Ex. 9876543212"
+        }
+    ],
+    "additionalInfo": [
+        {
+            "label": "Hosteler or Day Scholar",
+            "keY": "hostelerOrDayScholar",
+            "iType": "select",
+            "options": [
+                "Hosteler",
+                "Day Scholar"
+            ]
+        },
+        {
+            "label": "Nationality",
+            "keY": "nationality",
+            "iType": "text",
+            "placeholder": "Ex. Indian"
+        },
+        {
+            "label": "Aadhar Number",
+            "keY": "adharNumber",
+            "iType": "text",
+            "placeholder": "Ex. 1234 5678 9012"
+        },
+        {
+            "label": "PAN Number",
+            "keY": "panNumber",
+            "iType": "text",
+            "placeholder": "Ex. ABCDE1234F"
+        },
+        {
+            "label": "Driving License",
+            "keY": "drivingLicense",
+            "iType": "text",
+            "placeholder": "Ex. DL-123456789012"
+        },
+        {
+            "label": "Passport Number",
+            "keY": "passPortNumber",
+            "iType": "text",
+            "placeholder": "Ex. A12345678"
+        },
+        {
+            "label": "Passport Issue Date",
+            "keY": "passPortIssueDate",
+            "iType": "date",
+            "placeholder": "Ex. 2020-01-15"
+        },
+        {
+            "label": "Passport Expiry Date",
+            "keY": "passExpiryDate",
+            "iType": "date",
+            "placeholder": "Ex. 2030-01-14"
+        },
+        {
+            "label": "Blood Group",
+            "keY": "BloodGroup",
+            "iType": "text",
+            "placeholder": "Ex. O+"
+        }
+    ],
+    "familyInformation": [
+        {
+            "label": "Father's Name",
+            "keY": "fatherName",
+            "iType": "text",
+            "placeholder": "Ex. John Doe Sr."
+        },
+        {
+            "label": "Father's Email",
+            "keY": "fatherEmail",
+            "iType": "text",
+            "placeholder": "Ex. father.doe@example.com"
+        },
+        {
+            "label": "Father's Contact Number",
+            "keY": "fatherContactNumber",
+            "iType": "text",
+            "placeholder": "Ex. 123-321-1234"
+        },
+        {
+            "label": "Father's Occupation",
+            "keY": "fatherOccupation",
+            "iType": "text",
+            "placeholder": "Ex. Businessman"
+        },
+        {
+            "label": "Father's Company",
+            "keY": "fatherCompany",
+            "iType": "text",
+            "placeholder": "Ex. Doe Enterprises"
+        },
+        {
+            "label": "Father's Office Address",
+            "keY": "fatherOfficeAddress",
+            "iType": "text",
+            "placeholder": "Ex. 123, Business Lane, City, Country"
+        },
+        {
+            "label": "Mother's Name",
+            "keY": "motherName",
+            "iType": "text",
+            "placeholder": "Ex. Jane Doe"
+        },
+        {
+            "label": "Mother's Email",
+            "keY": "motherEmail",
+            "iType": "text",
+            "placeholder": "Ex. mother.doe@example.com"
+        },
+        {
+            "label": "Mother's Contact Number",
+            "keY": "motherContactNumber",
+            "iType": "text",
+            "placeholder": "Ex. 987-654-3210"
+        },
+        {
+            "label": "Mother's Occupation",
+            "keY": "motherOccupation",
+            "iType": "text",
+            "placeholder": "Ex. Teacher"
+        },
+        {
+            "label": "Mother's Company",
+            "keY": "motherCompany",
+            "iType": "text",
+            "placeholder": "Ex. ABC School"
+        },
+        {
+            "label": "Mother's Office Address",
+            "keY": "motherOfficeAddress",
+            "iType": "text",
+            "placeholder": "Ex. 456, Education Street, City, Country"
+        }
+    ],
+    "address": [
+        {
+            "label": "Current House Number",
+            "keY": "houseNumberCurrent",
+            "iType": "text",
+            "placeholder": "Ex. 123"
+        },
+        {
+            "label": "Current Address Line 1",
+            "keY": "line1Current",
+            "iType": "text",
+            "placeholder": "Ex. Apt 4B"
+        },
+        {
+            "label": "Current Address Line 2",
+            "keY": "line2Current",
+            "iType": "text",
+            "placeholder": "Ex. Apt 4B"
+        },
+        {
+            "label": "Current Country",
+            "keY": "countryCurrent",
+            "iType": "text",
+            "placeholder": "Ex. India"
+        },
+        {
+            "label": "Current State",
+            "keY": "stateCurrent",
+            "iType": "text",
+            "placeholder": "Ex. Uttar Pradesh"
+        },
+        {
+            "label": "Current City",
+            "keY": "cityCurrent",
+            "iType": "text",
+            "placeholder": "Ex. Muzaffarnagar"
+        },
+        {
+            "label": "Current District",
+            "keY": "districtCurrent",
+            "iType": "text",
+            "placeholder": "Ex. Muzaffarnagar"
+        },
+        {
+            "label": "Current Zip Code",
+            "keY": "zipCodeCurrent",
+            "iType": "text",
+            "placeholder": "Ex. 10001"
+        },
+        {
+            "label": "Is Permanent Address Same as Current?",
+            "keY": "isSameAs",
+            "iType": "checkbox"
+        },
+        {
+            "label": "Permanent House Number",
+            "keY": "houseNumberPermanent",
+            "iType": "text",
+            "placeholder": "Ex. 123"
+        },
+        {
+            "label": "Permanent Address Line 1",
+            "keY": "line1Permanent",
+            "iType": "text",
+            "placeholder": "Ex. Apt 4B"
+        },
+        {
+            "label": "Permanent Address Line 2",
+            "keY": "line2Permanent",
+            "iType": "text",
+            "placeholder": "Ex. Apt 4B"
+        },
+        {
+            "label": "Permanent Country",
+            "keY": "countryPermanent",
+            "iType": "text",
+            "placeholder": "Ex. India"
+        },
+        {
+            "label": "Permanent State",
+            "keY": "statePermanent",
+            "iType": "text",
+            "placeholder": "Ex. Uttar Pradesh"
+        },
+        {
+            "label": "Permanent City",
+            "keY": "cityPermanent",
+            "iType": "text",
+            "placeholder": "Ex. Muzaffarnagar"
+        },
+        {
+            "label": "Permanent District",
+            "keY": "districtPermanent",
+            "iType": "text",
+            "placeholder": "Ex. Muzaffarnagar"
+        },
+        {
+            "label": "Permanent Zip Code",
+            "keY": "zipCodePermanent",
+            "iType": "text",
+            "placeholder": "Ex. 10001"
+        }
+    ],
+    "Patents": {
+        "l1": "Patent Title",
+        "l2": "Patent Office",
+        "l3": "Application Status",
+        "l4": "Patent Status",
+        "l5": "Filing Date",
+        "l6": "Issue Date",
+        "l7": "Patent Url"
     },
-    "Experiences":{
-        "l1":"Company Sector",
-        "l2":"Job Title",
-        "l3":"Job Title",
-        "l4":"Job Location",
-        "l5":"Start Date",
-        "l6":"End Date",
-        "l7":"Project Url"
+    "Experiences": {
+        "l1": "Company Sector",
+        "l2": "Job Title",
+        "l3": "Job Title",
+        "l4": "Job Location",
+        "l5": "Start Date",
+        "l6": "End Date",
+        "l7": "Project Url"
     },
-    "Competitions":{
-        "l1":"Name",
-        "l2":"Location",
-        "l3":"Organizer",
-        "l4":"GroupOrIndividual",
-        "l5":"Start Date",
-        "l6":"End Date",
-        "l7":"Url"
+    "Competitions": {
+        "l1": "Name",
+        "l2": "Location",
+        "l3": "Organizer",
+        "l4": "GroupOrIndividual",
+        "l5": "Start Date",
+        "l6": "End Date",
+        "l7": "Url"
     },
-    "Certifications":{
-        "l1":"Name",
-        "l2":"Authority",
-        "l3":"Mode Of Exam",
-        "l4":"Score",
-        "l5":"Date Of Issue",
-        "l6":"Expiry Date",
-        "l7":"Url"
+    "Certifications": {
+        "l1": "Name",
+        "l2": "Authority",
+        "l3": "Mode Of Exam",
+        "l4": "Score",
+        "l5": "Date Of Issue",
+        "l6": "Expiry Date",
+        "l7": "Url"
     },
-    "Projects":{
-        "l1":"Title",
-        "l2":"Domain",
-        "l3":"Individual Or Group",
-        "l4":"Associated With",
-        "l5":"Start Date",
-        "l6":"End Date",
-        "l7":"Working Url",
-        "l8":"GitHub Url"
+    "Projects": {
+        "l1": "Title",
+        "l2": "Domain",
+        "l3": "Individual Or Group",
+        "l4": "Associated With",
+        "l5": "Start Date",
+        "l6": "End Date",
+        "l7": "Working Url",
+        "l8": "GitHub Url"
     },
-    "Responsibilities":{
-        "l1":"Title",
-        "l2":"Organization",
-        "l3":"Responsibilities",
-        "l4":"Achievements",
-        "l5":"Start Date",
-        "l6":"End Date",
-        "l7":"Drive Url",
-        "l8":"Location"
+    "Responsibilities": {
+        "l1": "Title",
+        "l2": "Organization",
+        "l3": "Responsibilities",
+        "l4": "Achievements",
+        "l5": "Start Date",
+        "l6": "End Date",
+        "l7": "Drive Url",
+        "l8": "Location"
     },
-    "Volunteerings":{
-        "l1":"Organization Name",
-        "l2":"Role",
-        "l3":"Cause",
-        "l4":"Location",
-        "l5":"Start Date",
-        "l6":"End Date",
-        "l7":"Url",
-        "l8":"Hours Per Week"
+    "Volunteerings": {
+        "l1": "Organization Name",
+        "l2": "Role",
+        "l3": "Cause",
+        "l4": "Location",
+        "l5": "Start Date",
+        "l6": "End Date",
+        "l7": "Url",
+        "l8": "Hours Per Week"
     }
-   }
+}

@@ -1,76 +1,74 @@
 {
-  "education": {
-    "isFrozen": false,
-    "startYear": "2021",
-    "endYear": "2025",
-    "cgpa": "9.32",
-    "percentage":"93.2",
-    "institution": "SRM Institute of Science and Technology",
-    "campus":"Modinagar",
-    "program":"B.Tech",
-    "department":"Computer Science and Engineering",
-    "specialization": "Artificial Intelligence and Machine Learning",
-    "sec":"B",
-    "semester": "6th",
-    "rollNo": "RA2111026030029"
-  },
-  "semesterScores": [
+  "PG": [
     {
-      "isFrozen": false,
-      "semester": "1",
-      "cgpa": "9.32",
-      "sgpa": "10",
-      "backlogs": 0
-    },
-    {
-      "isFrozen": false,
-      "semester": "2",
-      "cgpa": "9.05",
-      "sgpa": "9.05",
-      "backlogs": 0
-    },
-    {
-      "isFrozen": false,
-      "semester": "3",
-      "cgpa": "9.5",
-      "sgpa": "9.5",
-      "backlogs": 0
-    },
-    {
-      "isFrozen": false,
-      "semester": "4",
-      "cgpa": "9.12",
-      "sgpa": "9.12",
-      "backlogs": 0
-    },
-    {
-      "isFrozen": false,
-      "semester": "5",
-      "cgpa": "9",
-      "sgpa": "9",
-      "backlogs": 0
+      "institution": "SRM University",
+      "percentage": 85,
+      "board": "SRM",
+      "location": "Kattankulathur",
+      "program": "M.Tech",
+      "campus": "SRM Kattankulathur",
+      "department": "CSE",
+      "specialization": "AIML",
+      "section": "A",
+      "startYear": "2021",
+      "endYear": "2023",
+      "cgpa": 9.2
     }
   ],
-  "previousEducation": [
+  "UG": [
     {
-      "isFrozen": false,
-      "educationType": "Full Time",
-      "program": "12th",
-      "institution": "MG PUBLIC SCHOOL CIRCULAR ROAD MUZAFFARNAGAR",
-      "percentage": "95",
+      "institution": "SRM University",
+      "percentage": 92,
       "board": "CBSE",
-      "year": "2020 - 2021",
-      "document": "12th.pdf"
-    },
+      "location": "Vadapalani",
+      "program": "B.Tech",
+      "campus": "SRM Vadapalani",
+      "department": "CSE",
+      "specialization": "AI",
+      "section": "B",
+      "startYear": "2018",
+      "endYear": "2022",
+      "cgpa": 8.7
+    }
+  ],
+  "Diploma": [
     {
-      "isFrozen": false,
-      "educationType": "Full Time",
-      "program": "10th",
-      "institution": "MG PUBLIC SCHOOL CIRCULAR ROAD MUZAFFARNAGAR",
-      "percentage": "85",
+      "institution": "XYZ Polytechnic",
+      "percentage": 80,
+      "board": "UP",
+      "location": "Muzaffarnagar"
+    }
+  ],
+  "12th": [
+    {
+      "institution": "ABC School",
+      "percentage": 85,
       "board": "CBSE",
-      "year": "2018 - 2019",
-      "document": "10th.pdf"
+      "location": "Delhi"
+    }
+  ],
+  "10th": [
+    {
+      "institution": "XYZ School",
+      "percentage": 90,
+      "board": "CBSE",
+      "location": "Delhi"
+    }
+  ],
+  "Others": [
+    {
+      "institution": "ABC Academy",
+      "percentage": 80,
+      "board": "Rajasthan",
+      "location": "Jaipur",
+      "program": "Certification in Web Development",
+      "campus": "SRM Sonepat",
+      "department": "N/A",
+      "specialization": "N/A",
+      "section": "N/A",
+      "startYear": "2020",
+      "endYear": "2021",
+      "cgpa": null
     }
   ]
 }

@@ -1,52 +1,124 @@
 [
-    {
-        "about": {
-          "isFreezed": false,
-          "Full_Name": "TUSHAR TOMAR",
-          "DateOfBirth": "13 May, 2004",
-          "Gender": "Male",
-          "College": "SRM Institute of Science and Technology - Modi Nagar Campus"
+  {
+    "about": {
+      "isFreezed": false,
+      "isEditable": false,
+      "Reg_no": "RA2111026030029",
+      "Full_Name": "TUSHAR TOMAR",
+      "First_Name": "TUSHAR",
+      "Middle_Name": "mid_name",
+      "Last_Name": "TOMAR",
+      "DateOfBirth": "2004-05-13",
+      "Gender": "Male",
+      "Career_Path": "Not Interested",
+      "Placement_cycle_id": 949,
+      "RFID": "0869210648",
+      "RegisteredOn": "2024-05-15",
+      "VerifiedOn": "2024-05-18",
+      "isEligible": "true",
+      "verified_by": "SRM Systems"
+    },
+    "summary": {
+      "text": "I'm a hardworking student at SRMIST Modinagar, studying Technology with a focus on Artificial Intelligence and Machine Learning. I believe in working diligently and being punctual. Challenges motivate me, and I'm committed to doing well in my studies and future career. I love AI and ML and want to make a meaningful impact in the tech world."
+    },
+    "educationGap": {
+      "isFreezed": false,
+      "isEditable": false,
+      "TenthtoTwelve": 2,
+      "Reason1": "Health Issues",
+      "TwelveToUGGap": 1,
+      "Reason2": "Personal Development",
+      "UGToPGGap": 0,
+      "Reason3": "N/A"
+    },
+    "contactInfo": {
+      "isFreezed": false,
+      "isEditable": false,
+      "officialEmail": "john.doe@university.com",
+      "personelEmail": "johndoe@example.com",
+      "alternateEmail": "johndoe.alt@example.com",
+      "countryCode":"+91",
+      "contactNumber": "1351384354",
+      "alternateMobile": "9846846158"
+    },
+    "additionalInfo": {
+      "isFreezed": false,
+      "isEditable": false,
+      "hostelerOrDayScholar": "hostler",
+      "nationality": "Indian",
+      "adharNumber": "1234 5678 9012",
+      "panNumber": "ABCDE1234F",
+      "drivingLicense": "DL-123456789012",
+      "passPortNumber": "A12345678",
+      "passPortIssueDate": "2020-01-15",
+      "passExpiryDate": "2030-01-14",
+      "BloodGroup": "O+"
+    },
+    "familyInformation": {
+      "isFreezed": false,
+      "isEditable": false,
+      "fatherName": "John Doe Sr.",
+      "fatherEmail": "father.doe@example.com",
+      "fatherContactNumber": "123-321-1234",
+      "fatherOccupation": "Businessman",
+      "fatherCompany": "Doe Enterprises",
+      "fatherOfficeAddress": "123, Business Lane, City, Country",
+      "motherName": "Jane Doe",
+      "motherEmail": "mother.doe@example.com",
+      "motherContactNumber": "987-654-3210",
+      "motherOccupation": "Teacher",
+      "motherCompany": "ABC School",
+      "motherOfficeAddress": "456, Education Street, City, Country"
+    },
+    "address": {
+      "isFreezed": false,
+      "isEditable": false,
+      "houseNumberCurrent": 123,
+      "line1Current": "Apt 4B",
+      "line2Current": "Apt 4B",
+      "cityCurrent": "New York",
+      "districtCurrent": "New York",
+      "stateCurrent": "NY",
+      "zipCodeCurrent": "10001",
+      "countryCurrent": "United States",
+      "isSameAs": "false",
+      "houseNumberPermanent": 494,
+      "line1Permanent": "MNC",
+      "line2Permanent": "NEW MANDI",
+      "cityPermanent": "mzn",
+      "districtPermanent": "mzn",
+      "statePermanent": "up",
+      "zipCodePermanent": "251001",
+      "countryPermanent": "India"
+    },
+    "placements": {
+      "isFreezed": false,
+      "enrollments": [
+        {
+          "period": "Jun 2022 - Jul 2024",
+          "description": "Interview Weeks by Superset"
         },
-        "summary": {
-          "isFreezed": false,
-          "text": "I'm a hardworking student at SRMIST Modinagar, studying Technology with a focus on Artificial Intelligence and Machine Learning. I believe in working diligently and being punctual. Challenges motivate me, and I'm committed to doing well in my studies and future career. I love AI and ML and want to make a meaningful impact in the tech world."
+        {
+          "period": "Dec 2020 - Dec 2021",
+          "description": "Superset Placements"
         },
-        "address": {
-          "isFreezed": false,
-          "Permanent_Address": "494 Muneem Colony New Mandi Muzaffaranagar, Muzaffar Nagar, Muzaffar Nagar, Uttar Pradesh, India, 251001",
-          "Current_Address": "494 Muneem Colony New Mandi Muzaffaranagar, Muzaffar Nagar, Muzaffar Nagar, Uttar Pradesh, India, 251001"
-        },
-        "placements": {
-          "isFreezed": false,
-          "enrollments": [
-            {
-              "period": "Jun 2022 - Jul 2024",
-              "description": "Interview Weeks by Superset"
-            },
-            {
-              "period": "Dec 2020 - Dec 2021",
-              "description": "Superset Placements"
-            },
-            {
-              "period": "Oct 2023 - Jul 2025",
-              "description": "Enrollment Closed for Engineering Campus Placement - 2025 Batch"
-            }
-          ]
-        },
-        "socialMedia": {
-          "isFreezed": false,
-          "list": [
-            {
-              "id": 1,
-              "platform": "LinkedIn",
-              "link": "https://www.linkedin.com"
-            },
-            {
-              "id": 2,
-              "platform": "GitHub",
-              "link": "https://github.com"
-            }
-          ]
+        {
+          "period": "Oct 2023 - Jul 2025",
+          "description": "Enrollment Closed for Engineering Campus Placement - 2025 Batch"
         }
-      }      
+      ]
+    },
+    "socialMedia": [
+      {
+        "platform": "LinkedIn",
+        "link": "https://www.linkedin.com",
+        "editing":false
+      },
+      {
+        "platform": "GitHub",
+        "link": "https://github.com",
+        "editing":false
+      }
+    ]
+  }
 ]

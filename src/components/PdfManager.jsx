@@ -97,8 +97,8 @@ const FileStorageSystem = () => {
 
   return (
     <div className="container mx-auto py-8 px-4">
-      <h1 className="text-4xl font-bold text-gray-800 mb-6">
-        Advanced File Storage System
+      <h1 className="text-4xl font-bold text-gray-800 mb-6 text-center">
+        Upload Documents
       </h1>
 
       {folders.map((folder) => (

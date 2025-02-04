@@ -9,6 +9,12 @@ export default {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
+		  screens: {
+			'max-1300': { 'max': '1300px' }, // Correct max-width breakpoint
+			'max-1170': { 'max': '1170px' }, // Correct max-width breakpoint
+			'min-1170': { 'min': '1170px' }, // Correct max-width breakpoint
+			'max-950': { 'max': '950px' }, // Correct max-width breakpoint
+		  },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

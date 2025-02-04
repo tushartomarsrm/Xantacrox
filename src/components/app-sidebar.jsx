@@ -71,8 +71,8 @@ const data = {
       isActive:true,
       items: [
         {
-          title: "About",
-          url: "",
+          title: "Info",
+          url: "basicinfo",
         },
         {
           title: "Education",
@@ -97,6 +97,48 @@ const data = {
         {
           title: "Accomplishments",
           url: "accomplishments",
+          items: [
+            {
+              title: "About",
+              url: "",
+            },
+            {
+              title: "Education",
+              url: "education",
+            },
+            {
+              title: "Work Experience",
+              url: "experiences",
+            },
+            {
+              title: "Skills & Proficiency",
+              url: "skillsec",
+            },
+            {
+              title: "Resposibilities",
+              url: "responsibilities",
+            },
+            {
+              title: "Projects",
+              url: "projects",
+            },
+            {
+              title: "Accomplishments",
+              url: "accomplishments",
+            },
+            {
+              title: "Volunteering",
+              url: "volunteering",
+            },
+            {
+              title: "Extra-curricular Details",
+              url: "curricular",
+            },
+            {
+              title: "Resume Section",
+              url: "resume",
+            },
+          ],
         },
         {
           title: "Volunteering",

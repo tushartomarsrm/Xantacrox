@@ -106,24 +106,70 @@ const SkillsAndProficiency = () => {
               <tr key={item.id}>
                 {columns.map((col) => (
                   <td key={col.key} className="p-2 border">
-                    {col.key === "certificate" ? (
-                      <input
-                        type="file"
+                    {col.key === "grade" ? (
+                      <select
+                        value={item[col.key]}
                         onChange={(e) =>
                           handleInputChange(
                             section,
                             item.id,
                             col.key,
-                            e.target.files[0]?.name || ""
+                            e.target.value
                           )
                         }
                         disabled={editableRow[section] !== item.id}
-                        className="w-full p-1"
-                      />
+                        className={`w-full p-1 ${
+                          editableRow[section] === item.id
+                            ? "border-blue-500"
+                            : "border-transparent"
+                        }`}
+                      >
+                        {[
+                          "O",
+                          "A+",
+                          "A",
+                          "B+",
+                          "B",
+                          "C+",
+                          "C",
+                          "D+",
+                          "D",
+                          "Fail",
+                        ].map((option) => (
+                          <option key={option} value={option}>
+                            {option}
+                          </option>
+                        ))}
+                      </select>
+                    ) : col.key === "credit" ? (
+                      <select
+                        value={item[col.key]}
+                        onChange={(e) =>
+                          handleInputChange(
+                            section,
+                            item.id,
+                            col.key,
+                            e.target.value
+                          )
+                        }
+                        disabled={editableRow[section] !== item.id}
+                        className={`w-full p-1 ${
+                          editableRow[section] === item.id
+                            ? "border-blue-500"
+                            : "border-transparent"
+                        }`}
+                      >
+                        {[0, 1, 2, 3, 4, 5, 6].map((option) => (
+                          <option key={option} value={option}>
+                            {option}
+                          </option>
+                        ))}
+                      </select>
                     ) : (
                       <input
                         type="text"
                         value={item[col.key]}
+                        
                         onChange={(e) =>
                           handleInputChange(
                             section,
@@ -177,12 +223,11 @@ const SkillsAndProficiency = () => {
   );
 
   return (
-    <div className="container mx-auto p-4 space-y-8">
+    <div className="container mx-auto p-4 space-y-8 w-full">
       <h1 className="text-2xl font-bold text-center">Skills and Proficiency</h1>
       {renderTable("technicalSkill", [
         { key: "skillName", label: "Skill Name" },
         { key: "proficiency", label: "Proficiency" },
-        { key: "certificate", label: "Certificate" },
       ])}
       {renderTable("communicationLanguage", [
         { key: "name", label: "Language Name" },
@@ -193,6 +238,7 @@ const SkillsAndProficiency = () => {
         { key: "subName", label: "Sub Name" },
         { key: "sem", label: "Semester" },
         { key: "credit", label: "Credit" },
+        { key: "grade", label: "Grade" },
       ])}
     </div>
   );

@@ -55,6 +55,32 @@ app.get('/', (req, res) => {
 app.post('/upload', upload.single('file'), (req, res) => {
   res.redirect('/');
 });
+app.get('/latest-image', (req, res) => {
+  const folderPath = path.join(__dirname, 'uploads/profilepic');
+
+  fs.readdir(folderPath, (err, files) => {
+    if (err) {
+      return res.status(500).json({ message: 'Unable to read directory.' });
+    }
+
+    // Filter image files by extension (jpg, png, etc.)
+    const imageFiles = files.filter(file => /\.(jpg|jpeg|png|gif|webp)$/i.test(file));
+
+    if (imageFiles.length === 0) {
+      return res.status(404).json({ message: 'No images found.' });
+    }
+
+    // Get file stats and find the latest image
+    const latestImage = imageFiles
+      .map(file => ({
+        file,
+        time: fs.statSync(path.join(folderPath, file)).mtime.getTime(),
+      }))
+      .sort((a, b) => b.time - a.time)[0].file;
+
+    res.status(200).json({ imageUrl: `/uploads/profilepic/${latestImage}` });
+  });
+});
 app.get('/download/:folder/:fileName', (req, res) => {
     const { folder, fileName } = req.params;
     const filePath = path.join(__dirname, 'filestorage', folder, fileName);
